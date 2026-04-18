@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ES2022",
+    "outDir": "dist",
+    "lib": ["ES2022"],
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@local-reviewer/core": ["../core/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*"]
+}

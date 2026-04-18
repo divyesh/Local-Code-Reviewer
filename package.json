@@ -1,0 +1,29 @@
+{
+  "name": "local-code-reviewer",
+  "version": "1.0.0",
+  "description": "Local-first AI-powered code reviewer using Ollama",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w packages/core && npm run build -w packages/api && npm run build -w packages/web",
+    "dev": "npm run dev -w packages/web",
+    "start": "npm run start -w packages/api",
+    "cli": "node packages/cli/bin/reviewer.js"
+  },
+  "keywords": [
+    "ai",
+    "code-review",
+    "ollama",
+    "git"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "@types/node": "^20.0.0"
+  }
+}
